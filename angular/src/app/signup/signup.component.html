@@ -1,0 +1,32 @@
+<div class="form-container">
+    <h2>Add User</h2>
+    <form (onSubmit)="addUser()">
+        <div class="form-control">
+            <label for="role">Role: </label>
+            <select name="" id="role">
+                <option *ngFor="let type of userTypes" [value]="type.id">{{type.name}}</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label for="name">Name: </label>
+            <input type="text" name="" id="name">
+        </div>
+        <div class="form-control">
+            <label for="email">Email: </label>
+            <input type="email" name="" id="email">
+        </div>
+        <div class="form-control">
+            <label for="phone">Phone: </label>
+            <input type="text" id="phone">
+        </div>
+        <div class="form-control">
+            <label for="password">Password: </label>
+            <input type="password" id="password">
+        </div>
+        <div class="form-control">
+            <label for="repassword">Re-type Password: </label>
+            <input type="password" id="repassword">
+        </div>
+        <input type="submit" value="Add User">
+    </form>
+</div>

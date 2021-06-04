@@ -1,0 +1,4 @@
+{
+    "addUser": "user/add",
+    "getUserTypes": "user/types"
+}
